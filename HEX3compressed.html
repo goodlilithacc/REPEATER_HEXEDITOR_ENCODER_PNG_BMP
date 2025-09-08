@@ -1,0 +1,444 @@
+<html>
+<body style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<textarea id="fnefvalue" style="width:100px;height:50px;position:fixed;top:0;left:110;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">Editable Value To Focus On</textarea>
+<title>HTmLHeXmmcÃ»Î»Ã±GÃª*Å˜Ã¢toor</title>
+<div id="divUI">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><br /><br /><br /><br /><br />
+<input type="button" style="height:50px" value="Editable Value To Focus On Setup Value Set Value" onclick="document.getElementById('fnefvalue').value=document.getElementById('fnefvalueSet').value,document.getElementById('fnefvalue2').value=document.getElementById('fnefvalueSet').value,document.getElementById('fnefvalue3').value=document.getElementById('fnefvalueSet').value,document.getElementById('fnefvalue4').value=document.getElementById('fnefvalueSet').value">
+<textarea id="fnefvalueSet" style="width:100px;height:50px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">Editable Value To Focus On Setup Value</textarea>
+<br />
+<input type="button" style="height:50px" value="CLEAR" onclick="document.getElementById('fnefvalueSet').value=''">
+<br /><br /><br /><br /><br /><br />
+<br>
+</br>
+<br />
+<br />
+<br />
+<br />
+<button id="scrollButton2" style="width:100px;height:50px;position:fixed;top:0;left:0"">Scroll to Top</button>
+<script>/*<![CDATA[*/var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.checkStringArgs=function(a,c,b){if(null==a)throw new TypeError("The 'this' value for String.prototype."+b+" must not be null or undefined");if(c instanceof RegExp)throw new TypeError("First argument to String.prototype."+b+" must not be a regular expression");return a+""};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;
+$jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(a,c,b){a!=Array.prototype&&a!=Object.prototype&&(a[c]=b.value)};$jscomp.getGlobal=function(a){a=["object"==typeof globalThis&&globalThis,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global,a];for(var c=0;c<a.length;++c){var b=a[c];if(b&&b.Math==Math)return b}throw Error("Cannot find global object");};$jscomp.global=$jscomp.getGlobal(this);
+$jscomp.polyfill=function(a,c,b,d){if(c){b=$jscomp.global;a=a.split(".");for(d=0;d<a.length-1;d++){var e=a[d];e in b||(b[e]={});b=b[e]}a=a[a.length-1];d=b[a];c=c(d);c!=d&&null!=c&&$jscomp.defineProperty(b,a,{configurable:!0,writable:!0,value:c})}};
+$jscomp.polyfill("String.prototype.endsWith",function(a){return a?a:function(a,b){var c=$jscomp.checkStringArgs(this,a,"endsWith");a+="";void 0===b&&(b=c.length);b=Math.max(0,Math.min(b|0,c.length));for(var e=a.length;0<e&&0<b;)if(c[--b]!=a[--e])return!1;return 0>=e}},"es6","es3");document.getElementById("scrollButton2").addEventListener("click",function(){window.scrollTo(0,0)});/*]]>*/</script>
+<button id="scrollButtondirectTop" style="width:100px;height:50px;position:fixed;top:0;right:0">Scroll to Direction Top +</button>
+<script>
+document.getElementById("scrollButtondirectTop").addEventListener("click",function(){window.scrollBy(-100,-100)});</script>
+<br />
+<br />
+<br />
+//////////////////////////////////////////////STUFF TO REPEAT TO ADD TO HEX OR ENCODER/////////////////////////
+<br />
+<br />
+<div class="container2">
+<button id="repeat-btn2" style="width:100px;height:100px">Repeat</button>
+<br />
+Stuff TO REPEAT :
+<br />
+<textarea id="text-input2" cols="20" rows="10" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea>
+<input type="button" style="width:204px;height:50px" value="CLEAR Text To Repeat" onclick="document.getElementById('text-input2').value=''">
+<br />
+<br />
+<br />
+NUMBER S REPEAT CountTER :
+<br />
+<input type="number" id="repeat-count2" value="0" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<br />
+<br />
+<br />
+<input type="button" style="height:50px" value="CLEAR NUMBER S REPEAT CountTER :" onclick="document.getElementById('repeat-count2').value='0'">
+<br />
+<br />
+<br />
+REPEATED Stuff :
+<br />
+<textarea id="output-text2" cols="20" rows="10" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea>
+<input type="button" style="width:204px;height:50px" value="CLEAR Output Text" onclick="document.getElementById('output-text2').value=''">
+<br />
+<br />
+<button id="copy-btn2" style="width:100px;height:100px">Copy to Clipboard</button>
+<br />
+</div>
+<script>/*<![CDATA[*/var textInput2=document.getElementById("text-input2"),repeatCount2=document.getElementById("repeat-count2"),repeatCountchar2=document.getElementById("repeat-countchar2"),repeatBtn2=document.getElementById("repeat-btn2"),outputText2=document.getElementById("output-text2"),copyBtn2=document.getElementById("copy-btn2");
+repeatBtn2.addEventListener("click",function(){var a=textInput2.value.trim(),c=parseInt(repeatCount2.value);if(a&&0<c){for(var b="",d=0;d<c;d++)b+=a;outputText2.value=""+b;outputText2.value.length>repeatCountchar2.value&&(outputText2.value=outputText2.value)}else alert("Please enter text and repeat count")});copyBtn2.addEventListener("click",function(){navigator.clipboard.writeText(outputText2.value);alert("Copied to clipboard")});/*]]>*/</script>
+<br />
+<input type="button" style="height:50px" value="ADD To HEXaDeCiMAL" onclick="document.getElementById('textareaBytesAsHexadecimal').value+=outputText2.value">
+<br />
+<br />
+<input type="button" style="height:50px" value="ADD To ENCODER" onclick="document.getElementById('textareaDataEncoded').value+=outputText2.value">
+<br />
+<br />
+<input type="button" style="height:50px" value="EGALIZER HEXaDeCiMAL" onclick="document.getElementById('textareaBytesAsHexadecimal').value=outputText2.value">
+<br />
+<br />
+<input type="button" style="height:50px" value="EGALIZER ENCODER" onclick="document.getElementById('textareaDataEncoded').value=outputText2.value">
+<br /><br />
+<br />
+///////////////////////////////////////////////////////CENTRALHEXPROGRAM/////////////////////////////////////////////////////////////
+<div>
+<br />
+Text of Hex output Converted in text:
+<br />
+<textarea readonly id="HexTexte" cols="32" rows="16" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea>
+<br />
+<br />
+<br />
+Filename to Save As:
+<br />
+<input id="inputFileNameToSaveAs"></input>
+<br />
+<br />
+<br />
+<button style="height:50px" onclick="saveTextAsFile()">Save text of Hex output Converted in text</button>
+<br />
+<br />
+<br />
+<script type="text/javascript">
+function saveTextAsFile(){var a=document.getElementById("HexTexte").value;a=new Blob([a],{type:"text/plain"});a=window.URL.createObjectURL(a);var c=document.getElementById("inputFileNameToSaveAs").value,b=document.createElement("a");b.download=c;b.innerHTML="Download File";b.href=a;b.onclick=destroyClickedElement;b.style.display="none";document.body.appendChild(b);b.click()}function destroyClickedElement(a){document.body.removeChild(a.target)}</script>
+<br />
+<br />
+<br />
+<br /><br />
+<textarea id="fnefvalue2" style="width:100px;height:50px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">Editable Value To Focus On</textarea>
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="0" onclick="textareaBytesAsHexadecimal.value+='0'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="1" onclick="textareaBytesAsHexadecimal.value+='1'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="2" onclick="textareaBytesAsHexadecimal.value+='2'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="3" onclick="textareaBytesAsHexadecimal.value+='3'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="4" onclick="textareaBytesAsHexadecimal.value+='4'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="5" onclick="textareaBytesAsHexadecimal.value+='5'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="6" onclick="textareaBytesAsHexadecimal.value+='6'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="7" onclick="textareaBytesAsHexadecimal.value+='7'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="8" onclick="textareaBytesAsHexadecimal.value+='8'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="9" onclick="textareaBytesAsHexadecimal.value+='9'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="A" onclick="textareaBytesAsHexadecimal.value+='A'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="B" onclick="textareaBytesAsHexadecimal.value+='B'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="C" onclick="textareaBytesAsHexadecimal.value+='C'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="D" onclick="textareaBytesAsHexadecimal.value+='D'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="E" onclick="textareaBytesAsHexadecimal.value+='E'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="F" onclick="textareaBytesAsHexadecimal.value+='F'">
+<br />
+<br />
+<br />
+<input type="button" style="height:100px" value="Costum Button Original" onclick="document.getElementById('textareaBytesAsHexadecimal').value+=document.getElementById('CostumOriginal').value">
+<br />
+<br />
+Input Custom:
+<br />
+<input type="text" id="CostumOriginal" style="width:100px;height:100px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<input type="button" style="width:100px;height:100px" value="Clear" onclick="document.getElementById('CostumOriginal').value=''">
+<br />
+<br />
+<font size="13">HEX</font>
+<br />
+<input type="button" style="height:50px" value="CLEAR" onclick="textareaBytesAsHexadecimal.value=''">
+<button style="height:50px" onclick="myFunction()">CopyTextHex</button>
+<script>
+function myFunction(){var a=document.getElementById("textareaBytesAsHexadecimal");a.select();a.setSelectionRange(0,99999);navigator.clipboard.writeText(a.value);alert("Copied the text: "+a.value)}</script>
+<br />
+<br />
+<br />
+<button style="height:50px" onclick="scrollBarToTop()">
+Click here to ScrollTexteHex To Top
+</button>
+<script>function scrollBarToTop(){document.getElementById("textareaBytesAsHexadecimal").scrollTop=(0,0)}</script>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<textarea id="fnefvalue3" style="width:100px;height:50px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">Editable Value To Focus On</textarea>
+<br />
+<textarea id="textareaBytesAsHexadecimal" cols="32" rows="16" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea><br />
+<span id="CharactersCounter">0</span> Characters Counter
+<span id="BytesCounter">0</span> Bytes Counter
+</div>
+<script>/*<![CDATA[*/
+var textareaBytesAsHexadecimal=document.getElementById("textareaBytesAsHexadecimal"),CharactersCounter=document.getElementById("CharactersCounter"),BytesCounter=document.getElementById("BytesCounter"),HexTexte=document.getElementById("HexTexte");
+textareaBytesAsHexadecimal.addEventListener("input",function(){CharactersCounter.textContent=this.value.length;BytesCounter.textContent=CharactersCounter.textContent/2;for(var a=textareaBytesAsHexadecimal.value.toString(),c="",b=0;b<a.length;b+=2)c+=String.fromCharCode(parseInt(a.substr(b,2),16));HexTexte.textContent=c;document.getElementById("textareaBytesAsHexadecimal").value=document.getElementById("textareaBytesAsHexadecimal").value.replace(/[^0-9A-F]/ig,"").toUpperCase()});
+/*]]>*/</script>
+<br />
+<br />
+<br />
+<input type="button" style="height:50px" value="HEXRepeatTo180054Bytes.Bmp" onclick="document.getElementById('text-input').value=document.getElementById('textareaBytesAsHexadecimal').value">
+<br />
+<br />
+<br />
+<button style="height:50px" onclick="scrollBarToBottom()">
+Click here to ScrollTexteHex To Bottom
+</button>
+<script>function scrollBarToBottom(){var a=document.getElementById("textareaBytesAsHexadecimal");a.scrollTop=a.scrollHeight}</script>
+<br />
+<br />
+<p><b>Binary File to Image Transcoder:</b></p>
+<br />
+<div>
+<label>Filename:</label>
+<input id="inputFileName" value="" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<br />
+<br />
+<br />
+</input><input type="button" style="width:204px;height:50px" value="CLEAR Text Files Save" onclick="document.getElementById('inputFileName').value=''">
+</div>
+<br />
+<br />
+<div>
+<label>Bytes:</label><br />
+<input type="file" onchange="inputFileAsBytes_Changed(this)"></input><br />
+<br />
+<br />
+<br />
+<button style="width:50px;height:50px" onclick="buttonBytesSaveToFile_Clicked()">Save Bytes</button><br />
+<br />
+</div>
+<br />
+<button style="height:50px" onclick="buttonBytesToImage_Clicked()">Bytes to Image PNG</button>
+<br />
+<br />
+<button style="height:50px" onclick="buttonImageToBytes_Clicked()">Image to Bytes PNG</button>
+<br />
+<br />
+<br />
+<div>
+<label>Image:</label><br />
+<input type="file" onchange="inputFileAsImage_Changed(this)"></input><br />
+<div id="divImageDisplay"></div><br />
+<br />
+<br />
+<button style="height:50px" onclick="buttonImageSaveToFile_Clicked()">Save Image PNG</button><br />
+</div>
+<br />
+</div>
+<br />
+///////////////////////////////////////////////////////ENCODER///////////////////////////////////////////////////////////////////////////////////////
+<br />
+<script type="text/javascript">/*<![CDATA[*/function bytesFromTextarea(){for(var a=document.getElementById("textareaBytesAsHexadecimal").value,c=[],b=a.length,d=0;d<b;d+=2){var e=a.substr(d,2);e=parseInt(e,16);c.push(e)}return c}
+function buttonBytesSaveToFile_Clicked(){var a=document.getElementById("inputFileName").value,c=bytesFromTextarea();(new FileHelper).saveBytesToFileWithName(c,a)}
+function buttonBytesToImage_Clicked(){var a=bytesFromTextarea(),c=a.length;c=Math.ceil(c/3);var b=Math.ceil(Math.sqrt(c));b=new Coords(b,Math.ceil(c/b)+1);var d=document.createElement("canvas");d.width=b.x;d.height=b.y;var e=d.getContext("2d");c=a.length;if(16777216<c)alert("File must not be larger than 16777216 bytes.");else{var f="rgb("+[c>>16&255,c>>8&255,c&255].join()+")";e.fillStyle=f;e.fillRect(0,0,1,1);for(var h=0,g=1;g<b.y;g++)for(var l=0;l<b.x;l++){f=[0,0,0];for(var k=0;3>k;k++)h<c&&(f[k]=
+a[h]),h++;f="rgb("+f.join(",")+")";e.fillStyle=f;e.fillRect(l,g,1,1)}a=d.toDataURL("image/png");var m=document.createElement("img");m.onload=function(a){a=document.getElementById("divImageDisplay");a.innerHTML="";a.appendChild(m)};m.src=a}}
+function buttonImageSaveToFile_Clicked(){var a=document.getElementById("divImageDisplay").getElementsByTagName("img")[0];null==a&&alert("No image specified!");var c=document.createElement("canvas");c.width=a.width;c.height=a.height;c.getContext("2d").drawImage(a,0,0);a=document.getElementById("inputFileName").value;(new FileHelper).saveCanvasToFileWithName(c,a+".png")}
+function buttonImageToBytes_Clicked(){var a=document.getElementById("divImageDisplay").getElementsByTagName("img")[0];if(null==a)alert("No image specified!");else{var c=new Coords(a.width,a.height),b=document.createElement("canvas");b.width=c.x;b.height=c.y;b=b.getContext("2d");b.drawImage(a,0,0);a=[];var d=b.getImageData(0,0,c.x,c.y).data;b=d.slice(0,3);b=(b[0]<<16)+(b[1]<<8)+b[2];for(var e=0,f=1;f<c.y;f++)for(var h=0;h<c.x;h++){var g=f*c.x+h,l=d.slice(4*g,4*g+4);for(g=0;3>g;g++){var k=l[g];a[e]=
+k;e++}}a.length=b;c="";for(g=0;g<b;g++){k=a[g];for(d=k.toString(16);2>d.length;)d="0"+d;c+=d}document.getElementById("textareaBytesAsHexadecimal").value=c}}function inputFileAsBytes_Changed(a){a=a.files[0];var c=new FileReader;c.onload=function(a){a=a.target.result;for(var b=a.length,c="",f=0;f<b;f++){for(var h=a.charCodeAt(f).toString(16);2>h.length;)h="0"+h;c+=h}document.getElementById("textareaBytesAsHexadecimal").value=c};c.readAsBinaryString(a)}
+function inputFileAsImage_Changed(a){a=a.files[0];var c=new FileReader;c.onload=function(a){a=a.target.result;var b=document.createElement("img");b.onload=function(a){a=document.getElementById("divImageDisplay");a.innerHTML="";a.appendChild(b)};b.src=a};c.readAsDataURL(a)}function Coords(a,c){this.x=a;this.y=c}function FileHelper(){}
+FileHelper.prototype.saveBytesToFileWithName=function(a,c){for(var b=new ArrayBuffer(a.length),d=new Uint8Array(b),e=0;e<a.length;e++)d[e]=a[e];a=new Blob([b],{type:"application/type"});b=document.createElement("a");b.href=window.URL.createObjectURL(a);b.download=c;b.click()};
+FileHelper.prototype.saveCanvasToFileWithName=function(a,c){a=a.toDataURL("image/png");a=atob(a.split(",")[1]);for(var b=new ArrayBuffer(a.length),d=new Uint8Array(b),e=0;e<a.length;e++)d[e]=a.charCodeAt(e);a=new Blob([b],{type:"image/png"});0==c.toLowerCase().endsWith(".png")&&(c+=".png");b=document.createElement("a");b.href=window.URL.createObjectURL(a);b.download=c;b.click()};/*]]>*/</script>
+<br />
+<div id="divUI">
+<label><b>Data Transcoder</b></label><br />
+<label>Data to Encode:</label><br />
+<textarea id="textareaDataToEncode" cols="40" rows="10" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea><br />
+<input type="button" style="width:100px;height:100px" value="Clear" onclick="document.getElementById('textareaDataToEncode').value=''">
+<br />
+<br />
+<br />
+<label>From:</label>
+<select id="selectEncodingFrom" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<option>Base64</option>
+<option>Hexadecimal</option>
+<option selected>UTF8</option>
+</select>
+<label>To:</label>
+<select id="selectEncodingTo" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<option>Base64</option>
+<option selected>Hexadecimal</option>
+<option>UTF8</option>
+</select>
+<br />
+<br />
+<br />
+<button style="width:50px;height:50px" onclick="buttonEncode_Clicked()">v Encode v</button>
+<button style="width:50px;height:50px" onclick="buttonDecode_Clicked()">^ Decode ^</button>
+<br />
+<label>Data Encoded:</label><br />
+<textarea id="textareaDataEncoded" cols="40" rows="10" style="background-color:grey;color:#fff;font-size:7.5pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea>
+<input type="button" style="width:100px;height:100px" value="Clear" onclick="document.getElementById('textareaDataEncoded').value=''">
+<br />
+<br /><br />
+<input type="button" style="width:204px;height:50px" value="ADD TO TOP CODE HEX" onclick="document.getElementById('textareaBytesAsHexadecimal').value+=textareaDataEncoded.value">
+<br />
+</div>
+<br />
+<script type="text/javascript">/*<![CDATA[*/
+function buttonDecode_Clicked(){var a=document.getElementById("selectEncodingFrom"),c=document.getElementById("selectEncodingTo"),b=document.getElementById("textareaDataToEncode"),d=document.getElementById("textareaDataEncoded");a=Encoding.Instances[a.value];c=Encoding.Instances[c.value].decodeToBytes(d.value);c=a.encodeBytes(c);b.value=c}
+function buttonEncode_Clicked(){var a=document.getElementById("selectEncodingFrom"),c=document.getElementById("selectEncodingTo"),b=document.getElementById("textareaDataToEncode"),d=document.getElementById("textareaDataEncoded");c=Encoding.Instances[c.value];a=Encoding.Instances[a.value].decodeToBytes(b.value);a=c.encodeBytes(a);d.value=a}function Encoding(a,c,b){this.name=a;this.decodeToBytes=c;this.encodeBytes=b}
+var Encoding_Instances=function(){this.Base64=new Encoding("Base64",function(a){a=atob(a);for(var c=[],b=0;b<a.length;b++){var d=a.charCodeAt(b);c.push(d)}return c},function(a){for(var c="",b=0;b<a.length;b++){var d=String.fromCharCode(a[b]);c+=d}return btoa(c)});this.Hexadecimal=new Encoding("Hexadecimal",function(a){for(var c=[],b=0;b<a.length;b+=2){var d=a.substr(b,2);d=parseInt(d,16);c.push(d)}return c},function(a){for(var c="",b=0;b<a.length;b++){var d=a[b].toString(16);c+=d}return c});this.UTF8=
+new Encoding("UTF8",function(a){for(var c=[],b=0;b<a.length;b++){var d=a.charCodeAt(b);c.push(d)}return c},function(a){for(var c="",b=0;b<a.length;b++){var d=String.fromCharCode(a[b]);c+=d}return c})};Encoding.Instances=new Encoding_Instances;/*]]>*/</script>
+<br />
+//////////////////////////////////////////////Text Repeater for bmp 180054 Bytes/////////////////////////////////////////////////////////////////
+<br />
+<div class="container">
+<br />
+<textarea id="fnefvalue4" style="width:100px;height:50px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">Editable Value To Focus On</textarea>
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="0" onclick="document.getElementById('text-input').value+='0'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="1" onclick="document.getElementById('text-input').value+='1'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="2" onclick="document.getElementById('text-input').value+='2'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="3" onclick="document.getElementById('text-input').value+='3'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="4" onclick="document.getElementById('text-input').value+='4'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="5" onclick="document.getElementById('text-input').value+='5'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="6" onclick="document.getElementById('text-input').value+='6'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="7" onclick="document.getElementById('text-input').value+='7'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="8" onclick="document.getElementById('text-input').value+='8'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="9" onclick="document.getElementById('text-input').value+='9'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="A" onclick="document.getElementById('text-input').value+='A'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="B" onclick="document.getElementById('text-input').value+='B'">
+<br />
+<br />
+<br />
+<input type="button" style="width:50px;height:50px" value="C" onclick="document.getElementById('text-input').value+='C'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="D" onclick="document.getElementById('text-input').value+='D'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="E" onclick="document.getElementById('text-input').value+='E'">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" style="width:50px;height:50px" value="F" onclick="document.getElementById('text-input').value+='F'">
+<br />
+<br />
+<br />
+<input type="button" style="width:100px;height:100px" value="Costum Button" onclick="document.getElementById('text-input').value+=document.getElementById('Costum').value">
+<br />
+<br />
+Input Costom:
+<br />
+<input type="text" id="Costum" style="width:100px;height:100px;background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<input type="button" style="width:100px;height:100px" value="Clear" onclick="document.getElementById('Costum').value=''">
+<br />
+<br />
+<textarea id="text-input" cols="40" rows="26" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;"></textarea>
+<input type="button" style="width:204px;height:50px" value="CLEAR Text To Repeat" onclick="document.getElementById('text-input').value=''">
+<br />
+<br />
+<input type="button" style="height:50px" value="360108 divized Input texte Count Rounded Value +1" onclick="document.getElementById('repeat-count').value=Math.round(360108/document.getElementById('text-input').value.length+1)">
+<br />
+<br />
+<br />
+<input type="number" id="repeat-count" value="360108" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<br />
+<br />
+<br />
+<input type="button" style="width:204px;height:50px" value="CLEAR Repeat Count" onclick="document.getElementById('repeat-count').value='360108'">
+<br />
+<br />
+<br />
+<input type="number" id="repeat-countchar" value="360108" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">
+<br />
+<br />
+<br />
+<input type="button" style="width:204px;height:50px" value="CLEAR Repeat Count Characters" onclick="document.getElementById('repeat-countchar').value='360108'">
+<br />
+<br />
+<br />
+<button id="repeat-btn" style="width:100px;height:100px">Repeat</button>
+<br />
+<textarea id="output-text" cols="40" rows="26" style="background-color:grey;color:#fff;font-size:7.6pt;font-family:"Comic Sans MS", "Comic Sans", cursive;">424d56bf0200000000003600000028000000c8000000d4feffff010018000000000020bf020000000000000000000000000000000000</textarea>
+<br />
+<br />
+<br />
+<br />
+<input type="button" style="width:204px;height:50px" value="CLEAR Output Text" onclick="document.getElementById('output-text').value='424d56bf0200000000003600000028000000c8000000d4feffff010018000000000020bf020000000000000000000000000000000000'">
+<br />
+<br />
+<br />
+<br />
+<button id="copy-btn" style="width:100px;height:100px">Copy to Clipboard</button>
+<br />
+</div>
+<script>/*<![CDATA[*/
+var textInput=document.getElementById("text-input"),repeatCount=document.getElementById("repeat-count"),repeatCountchar=document.getElementById("repeat-countchar"),repeatBtn=document.getElementById("repeat-btn"),outputText=document.getElementById("output-text"),copyBtn=document.getElementById("copy-btn");
+repeatBtn.addEventListener("click",function(){var a=textInput.value.trim(),c=parseInt(repeatCount.value);if(a&&0<c){for(var b="",d=0;d<c;d++)b+=a;outputText.value="424d56bf0200000000003600000028000000c8000000d4feffff010018000000000020bf020000000000000000000000000000000000"+b;outputText.value.length>repeatCountchar.value&&(outputText.value=outputText.value.substring(0,repeatCountchar.value))}else alert("Please enter text and repeat count")});
+copyBtn.addEventListener("click",function(){navigator.clipboard.writeText(outputText.value);alert("Copied to clipboard")});/*]]>*/</script>
+<br />
+<br />
+<br />
+<input type="button" style="height:50px" value="EGALIZER TOP BUTTON HEXaDeCiMAL" onclick="document.getElementById('textareaBytesAsHexadecimal').value=outputText.value">
+<br /><br />
+<br />
+<br />
+<br />
+<a href="javascript:location.reload()">
+<input type="button" style="height:50px" value="Reload This Page"/>
+</a>
+<a href="javascript:window.location.href=window.location.href">
+<input type="button" style="height:50px" value="Restore The Page"/>
+</a>
+<input type="button" style="height:50px" value="Refresh" onclick="history.go(0)" />
+<br />
+<br />
+<br />
+<button id="scrollButtondirectbottom" style="width:100px;height:50px;position:fixed;bottom:50;right:0">Scroll to Direction Bottom +</button>
+<script>document.getElementById("scrollButtondirectbottom").addEventListener("click",function(){window.scrollBy(100,100)});</script>
+<button id="scrollButton" style="width:100px;height:50px;position:fixed;bottom:0;right:0">Scroll to Bottom</button>
+<script>document.getElementById("scrollButton").addEventListener("click",function(){window.scrollTo(0,document.body.scrollHeight)});</script>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</body>
+</html>
