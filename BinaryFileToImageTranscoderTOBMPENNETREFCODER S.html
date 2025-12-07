@@ -1,6 +1,31 @@
-<html>
-<body>
-
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:grey;color:#ffffff;font-size: 7.6pt;font-family: "Comic Sans MS", "Comic Sans", cursive;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary File to Image Transcoder</title>
+</head>
+<style>
+button {
+  background-color: white;
+}
+input {
+  background-color: white;
+}
+button:hover{background-color:blue;}
+button:focus{background-color:blue;}
+button:active{background-color:blue;}
+button:link{background-color:blue;}
+button:lang{background-color:blue;}
+button:Toggle{background-color:blue;}
+input:hover{background-color:blue;}
+input:focus{background-color:blue;}
+input:active{background-color:blue;}
+input:link{background-color:blue;}
+input:lang{background-color:blue;}
+input:Toggle{background-color:blue;}
+</style>
 <div id="divUI">
 
 	<p><b>Binary File to Image Transcoder:</b></p>
@@ -8,16 +33,17 @@
 
 	<div>
 		<label>Filename:</label>
-		<input id="inputFileName" value="Data"></input>
+		<input id="inputFileName" value="Data" style="background-color:grey;color:#ffffff;font-size: 7.6pt;font-family: "Comic Sans MS", "Comic Sans", cursive;"></input>
 	</div>
 
 	<div>
 		<label>Bytes:</label><br />
-		<input type="file" onchange="inputFileAsBytes_Changed(this);"></input><br />
-		<textarea id="textareaBytesAsHexadecimal" cols="32" rows="16"></textarea><br />
+		<input type="file" style="width: 200px; height: 100px;" onchange="inputFileAsBytes_Changed(this);"></input><br />
+		<textarea id="textareaBytesAsHexadecimal" cols="32" rows="16" style="background-color:grey;color:#ffffff;font-size: 7.6pt;font-family: "Comic Sans MS", "Comic Sans", cursive;"></textarea><br />
                 <span id="CharactersCounter">0</span> Characters Counter
                 <span id="BytesCounter">0</span> Bytes Counter
                 <br />
+				<br />
         <script>     
         const textinput2 = document.getElementById('textareaBytesAsHexadecimal');
         const CharactersCounter = document.getElementById('CharactersCounter');
@@ -34,17 +60,35 @@
    
         });
         </script>  
-		<button onclick="buttonBytesSaveToFile_Clicked();">Save Bytes</button><br />
+		<button style="width: 100px; height: 100px;" onclick="buttonBytesSaveToFile_Clicked();">Save Bytes</button><br />
 	</div>
-
-	<button onclick="buttonBytesToImage_Clicked();">Bytes to Image</button>
-	<button onclick="buttonImageToBytes_Clicked();">Image to Bytes</button>
-
+	<br />
+	<br />
+	<button style="width: 100px; height: 100px;" onclick="buttonBytesToImage_Clicked();">Bytes to Image</button>
+	&nbsp;&nbsp;&nbsp;
+	<button style="width: 100px; height: 100px;" onclick="buttonImageToBytes_Clicked();">Image to Bytes</button>
+    <br />
+	<br />
 	<div>
 		<label>Image:</label><br />
-		<input type="file" onchange="inputFileAsImage_Changed(this);"></input><br />
-		<div id="divImageDisplay"></div><br />
-		<button onclick="buttonImageSaveToFile_Clicked();">Save Image</button><br />
+		<input type="file" style="width: 200px; height: 100px;" onchange="inputFileAsImage_Changed(this);"></input><br />
+		<br />
+		<br />
+		 <style>
+.zoom {
+  padding: 153px;
+  transition: transform .2.5s; /* Animation */
+  width: 13px;
+  height: 29px;
+  margin: 3 auto;
+}
+
+.zoom:hover {
+  transform: scale(17.1);
+}
+</style>
+		<div id="divImageDisplay" class="zoom"></div>
+		<button style="width: 100px; height: 100px;" onclick="buttonImageSaveToFile_Clicked();">Save Image</button><br />
 	</div>
 
 </div>
@@ -420,6 +464,10 @@ function FileHelper()
 }
 
 </script>
-
+<br /><br />
+<a href="javascript: window.location.href=window.location.href">
+        <input type="button" style="height: 50px;" value = "Restore The Page"/>
+        </a>
+		<br /><br /><br />
 </body>
 </html>
