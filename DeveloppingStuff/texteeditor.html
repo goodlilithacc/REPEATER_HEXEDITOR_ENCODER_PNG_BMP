@@ -1,0 +1,100 @@
+<html>
+<head>   
+<meta charset="UTF-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+</head>
+<style>
+button {
+  background-color: white;
+}
+input {
+  background-color: white;
+}
+button:hover{background-color:blue;}
+button:focus{background-color:blue;}
+button:active{background-color:blue;}
+button:link{background-color:blue;}
+button:lang{background-color:blue;}
+button:Toggle{background-color:blue;}
+input:hover{background-color:blue;}
+input:focus{background-color:blue;}
+input:active{background-color:blue;}
+input:link{background-color:blue;}
+input:lang{background-color:blue;}
+input:Toggle{background-color:blue;}
+</style>
+<body style="background-color:grey;color:#ffffff;font-size: 17pt;font-family: "Comic Sans MS", "Comic Sans", cursive;">
+<table style="background-color:grey;color:#ffffff;font-size: 17pt;font-family: "Comic Sans MS", "Comic Sans", cursive;">
+	<tr><td>Text to Save:</td></tr>
+	<tr>
+		<td colspan="3">
+			<textarea id="inputTextToSave" cols="22" rows="5" style="background-color:grey;color:#ffffff;font-size: 17pt;font-family: "Comic Sans MS", "Comic Sans", cursive;"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<input type="button" style="width: 100px; height: 100px;" value="Costum Button" onclick="document.getElementById('inputTextToSave').value += document.getElementById('Costum').value">
+        <input type="text" id="Costum" style="width: 100px; height: 100px;background-color:grey;color:#ffffff;font-size: 7.6pt;font-family: "Comic Sans MS", "Comic Sans", cursive;">
+        <input type="button" style="width: 100px; height: 100px;" value="Clear" onclick="document.getElementById('Costum').value =''">
+		<td>Filename to Save As:</td>
+		<td><input id="inputFileNameToSaveAs" style="width: 240px;background-color:grey;color:#ffffff;font-size: 17pt;font-family: "Comic Sans MS", "Comic Sans", cursive;"></input></td>
+	</tr>
+	<tr />
+	<td />
+	<button onclick="saveTextAsFile()" style="height: 50px;">Save Text to File</button>
+	<br />
+	<br />
+	<br />
+	<a href="javascript: window.location.href=window.location.href">
+<input type="button" style="height: 50px;" value = "Restore The Page"/>
+</a>
+<br />
+	<tr>
+		<td>Select a File to Load:</td>
+		<td><input type="file" id="fileToLoad"></td>
+	</tr>
+	<tr />
+	<td />
+	<button onclick="loadFileAsText()">Load Selected File</button>
+</table>
+
+<script type="text/javascript">
+
+function saveTextAsFile()
+{
+	var textToSave = document.getElementById("inputTextToSave").value;
+	var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+	var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+	var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+	var downloadLink = document.createElement("a");
+	downloadLink.download = fileNameToSaveAs;
+	downloadLink.innerHTML = "Download File";
+	downloadLink.href = textToSaveAsURL;
+	downloadLink.onclick = destroyClickedElement;
+	downloadLink.style.display = "none";
+	document.body.appendChild(downloadLink);
+
+	downloadLink.click();
+}
+
+function destroyClickedElement(event)
+{
+	document.body.removeChild(event.target);
+}
+
+function loadFileAsText()
+{
+	var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+	var fileReader = new FileReader();
+	fileReader.onload = function(fileLoadedEvent) 
+	{
+		var textFromFileLoaded = fileLoadedEvent.target.result;
+		document.getElementById("inputTextToSave").value = textFromFileLoaded;
+	};
+	fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
+</script>
+</body>
+</html>
